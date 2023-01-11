@@ -1,2 +1,2 @@
 # DSA
-Learning DSA and keeping track of my code
+I am Learning DSA  in C++ and will be using this repo to keep a track of my progress ☺️
