@@ -47,3 +47,14 @@ int main(){
     cout<<"The duplicate in the array is "<<findDuplicate(arr)<<endl;
     return 0;
 }
+
+
+
+
+// Approach
+
+/*
+The XOR operation has the property that if A ^ B = C, then C ^ A = B and C ^ B = A. This means that if you XOR two numbers together, you can get the original numbers back by XORing the result with one of the original numbers. This property is used in this code to find the duplicate element.
+
+It's important to note that this approach will work only if the array has exactly one duplicate element and array is from 0 to n-1. If there are multiple duplicate elements or numbers are not in the range of 0 to n-1, this code will not give the correct result.
+*/
