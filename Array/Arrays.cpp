@@ -88,3 +88,27 @@ int main(){
 }
 
 
+// Find maximum and second maximum
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[] = {2,-3,4,1,6,-5,3,9,2};
+    int n = sizeof(arr)/sizeof(int);
+    int max1,max2;
+    max1=0;
+    max2=0;
+    for(int i=0;i<n;i++){
+        if (arr[i]>max1){
+            max2 = max1;
+            max1 = arr[i];
+        }
+        else if(arr[i]>max2){
+            max2 = arr[i];
+        }
+    }
+    cout<<"The largest number  is "<<max1<<endl;
+    cout<<"The 2nd largest number  is "<<max2<<endl;
+    return 0;
+}
