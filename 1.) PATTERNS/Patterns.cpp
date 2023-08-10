@@ -535,25 +535,16 @@ using namespace std;
 
 int main()
 {
-    int m, n;
-    cout << "Enter the no of rows ";
-    cin >> m;
-    cout << "Enter the no of cols ";
-    cin >> n;
-    for (int i = 1; i <= m; i++)
-    {
-        int space = n - i;
-        while (space)
-        {
-            cout << " ";
-            space--;
+    int m,n;
+    cout<<"Enter the no of rows ";
+    cin>>m;
+    cout<<"Enter the no of cols ";
+    cin>>n;
+    for(int i=0;i<=m;i++){
+        for(int j=00;j<=i;j++){
+            cout<<"*";
         }
-
-        for (int j = 1; j <= i; j++)
-        {
-            cout << "*";
-        }
-        cout << endl;
+        cout<<endl;
     }
     return 0;
 }
@@ -565,7 +556,7 @@ int main()
 ***
 **
 *
-*/
+*
 
 #include <iostream>
 using namespace std;
@@ -856,6 +847,251 @@ int main()
 // Q.27
 // Print the pattern
 /*
+   *       [4,1,4]
+  ***      [3,3,3]
+ *****     [2,5,2]
+*******    [1,7,1]
+*********   [0,9,0]
+*/
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, m;
+    cout << "Enter the number of rows";
+    cin >> m;
+    cout << "Enter the number of cols";
+    cin >> n;
+
+    for(int i =1;i<=m;i++){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i*2-1;k++){
+            cout<<"*";
+        }
+        for(int j=1;j<n-i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
+// Q.28
+// Print the pattern
+/*
+*********    [0,9,0]
+ *******     [1,7,1]
+  *****      [2,5,2]
+   ***       [3,3,3]
+    *        [4,1,4]
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n, m;
+    cout << "Enter the number of rows";
+    cin >> m;
+    cout << "Enter the number of cols";
+    cin >> n;
+
+    for(int i =5;i>0;i--){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i*2-1;k++){
+            cout<<"*";
+        }
+        for(int j=1;j<n-i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+// Q.29
+// Print the pattern
+/*
+    *   
+   ***  
+  ***** 
+ *******
+*********
+*********
+ *******
+  ***** 
+   ***  
+    *
+*/ 
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,m;
+    cout<<"Enter the number of rows";
+    cin>>m;
+    cout<<"Enter the number of cols";
+    cin>>n;
+
+    for(int i =1;i<=m;i++){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i*2-1;k++){
+            cout<<"*";
+        }
+        for(int j=1;j<n-i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    for(int i =5;i>0;i--){
+        for(int j=1;j<=n-i;j++){
+            cout<<" ";
+        }
+        for(int k=1;k<=i*2-1;k++){
+            cout<<"*";
+        }
+        for(int j=1;j<n-i;j++){
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+// Q.30
+// Print the pattern
+/*
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+*/
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,m;
+    cout<<"Enter the number of rows";
+    cin>>m;
+    cout<<"Enter the number of cols";
+    cin>>n;
+
+    for(int i =1;i<=2*m-1;i++){
+        int stars=i;
+        if(i>n){
+            stars=2*n-i;
+        }
+        for(int j=1;j<=stars;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
+
+
+// Q.31
+// Print the pattern
+/*
+0
+10
+010
+1010
+01010
+*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,m;
+    cout<<"Enter the number of rows";
+    cin>>m;
+    cout<<"Enter the number of cols";
+    cin>>n;
+
+    for(int i=1;i<=m;i++){
+        int start =1;
+        if(i%2==0){
+            start=1;
+        }
+        else{
+            start=0;
+        }
+        for(int j=0;j<i;j++){
+            cout<<start;
+            start=1-start;
+        }cout<<endl;
+    }
+    
+    return 0;
+}
+
+
+// Q.32
+// Print the pattern
+/*
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,m;
+    cout<<"Enter the number of rows";
+    cin>>m;
+    cout<<"Enter the number of cols";
+    cin>>n;
+
+int space = 2*(m-1);
+    for(int i =1;i<=m;i++){
+        for(int j=1;j<=i;j++){
+            cout<<j;
+        }
+        for(int k=1;k<=space;k++){
+            cout<<" ";
+        }
+        for(int j=i;j>=1;j--){
+            cout<<j;
+        }
+        cout<<endl;
+        space-=2;
+    }
+    
+    return 0;
+}
+
+
+
+
+// Q.40
+// Print the pattern
+/*
 
 1 2 3 4 5 5 4 3 2 1
 1 2 3 4 * * 4 3 2 1
@@ -904,3 +1140,4 @@ int main()
     }
     return 0;
 }
+
