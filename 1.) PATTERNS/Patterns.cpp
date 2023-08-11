@@ -1,7 +1,7 @@
 // Q.1
 // Print the pattern
 /*
-    1 2 3 4  cols
+    1 2 3 4  
     1 2 3 4
     1 2 3 4
     1 2 3 4
@@ -557,6 +557,7 @@ int main()
 **
 *
 *
+*/
 
 #include <iostream>
 using namespace std;
@@ -1089,7 +1090,7 @@ int space = 2*(m-1);
 
 
 
-// Q.40
+// Q.37
 // Print the pattern
 /*
 
@@ -1141,3 +1142,55 @@ int main()
     return 0;
 }
 
+
+// // Q.38
+// // Print the pattern
+// /*
+// if n=5
+//     1 2 3 4 5
+//     11 12 13 14 15
+//     21 22 23 24 25
+//     16 17 18 19 20
+//     6 7 8 9 10
+
+// if n=4
+//     1 2 3 4
+//     9 10 11 12
+//     13 14 15 16
+//     5 6 7 8
+// */
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the no of rows ";
+    cin >> n;
+    int count = 1;
+    for (int row = 1; row <= n; row++)
+    {
+        int current=count;
+        for (int col = 1; col <=n; col++){
+                cout << current << " ";
+                current++;
+            }
+            if(row==(n+1)/2){
+                if(n%2!=0){
+                    count=n*(n-2)+1;
+                }
+                else{
+                    count=n*(n+1)+1;
+                }
+            }
+            else if(row>(n+1)/2){
+                count=count-2*n;
+            }
+            else{
+                count=count+2*n;
+            }
+        cout << endl;
+    }
+    return 0;
+}
