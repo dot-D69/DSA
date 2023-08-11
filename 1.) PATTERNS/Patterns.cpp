@@ -999,7 +999,7 @@ int main(){
     for(int i =1;i<=2*m-1;i++){
         int stars=i;
         if(i>n){
-            stars=2*n-i;
+            stars=2*n-i;       //  2*5-6=4 , 2*5-7=3  2*5-8=2  2*5-9=1  2*5-10=0
         }
         for(int j=1;j<=stars;j++){
             cout<<"*";
@@ -1084,6 +1084,123 @@ int space = 2*(m-1);
         space-=2;
     }
     
+    return 0;
+}
+
+
+// Q.33
+// Print the pattern
+/*              [star space star]
+**********      [5 0 5]
+****  ****      [4 2 4]
+***    ***      [3 4 3]
+**      **      [2 6 2]
+*        *      [1 8 1]
+----- Symmetrically opposite of above -----
+*        *      [1 8 1]
+**      **      [2 6 2]
+***    ***      [3 4 3]
+****  ****      [4 2 4]
+**********      [5 0 5]
+ */
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter the number of rows";
+    cin>>n;
+
+    int space=0;
+    for(int i=0;i<n;i++){
+        // stars
+        for(int j=0;j<n-i;j++){
+            cout<<"*";
+        }
+        // spaces
+        for(int j=0;j<space;j++){
+            cout<<" ";
+        } 
+        // stars
+        for(int j=0;j<n-i;j++){
+            cout<<"*";
+        }
+        space+=2;
+        cout<<endl;
+    }
+    int space2=2*n-2;
+    for(int i=0;i<n;i++){
+        // stars
+        for(int j=0;j<=i;j++){
+            cout<<"*";
+        }
+        // spaces
+        for(int j=0;j<space2;j++){
+            cout<<" ";
+        } 
+        // stars
+        for(int j=0;j<=i;j++){
+            cout<<"*";
+        }
+        space2-=2;
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+// Q.34
+// Print the pattern
+/*
+*        *      [1 8 1]
+**      **       [2 6 2]
+***    ***       [3 4 3]
+****  ****       [4 2 4]
+**********       [5 0 5]
+****  ****       [4 2 4]
+***    ***       [3 4 3]
+**      **       [2 6 2]
+*        *       [1 8 1]
+ */
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter the number of rows";
+    cin>>n;
+
+    int space =2*n-2;
+    for(int i =1;i<=2*n-1;i++){
+        int stars=i;
+        if(i>n){
+            stars=2*n-i;       //  2*5-6=4 , 2*5-7=3  2*5-8=2  2*5-9=1  2*5-10=0
+        }
+        // stars
+        for(int j=1;j<=stars;j++){
+            cout<<"*";
+        }
+        // spaces
+        for(int j=1;j<=space;j++){
+            cout<<" ";
+        }
+        // stars
+        for(int j=1;j<=stars;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+        if(i<n){
+            space-=2;
+        }
+        else{
+            space+=2;
+        }
+    }
     return 0;
 }
 
