@@ -1206,6 +1206,78 @@ int main(){
 
 
 
+// Q.35
+// Print the pattern
+/*
+****
+*  *
+*  *
+****
+ */
+
+
+
+#include <iostream>
+using namespace std;
+
+
+int main(){
+    int n;
+    cout<<"Enter the number of rows";
+    cin>>n;
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(i==0||j==0||i==n-1||j==n-1){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+
+
+// Q.36
+// Print the pattern
+/*
+4 4 4 4 4 4 4 
+4 3 3 3 3 3 4 
+4 3 2 2 2 3 4 
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4 
+ */
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter the number of rows";
+    cin>>n;
+
+    for(int i=0;i<2*n-1;i++){
+        for(int j=0;j<2*n-1;j++){
+            int top=i;
+            int left=j;
+            int right=(2*n-2)-j;
+            int bottom=(2*n-2)-i;
+            cout<<(n-min(min(top,bottom),min(left,right)));
+            cout<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
 
 // Q.37
 // Print the pattern
