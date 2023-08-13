@@ -34,6 +34,10 @@ void Vectors(){
     vector<int> v = {1, 2, 3, 4, 5};
     cout << v[0] << " " << v[1] << endl; // 1 2
 
+    v.front(); // returns the first element of the vector
+    v.back(); // returns the last element of the vector
+    v.size(); // returns the size of the vector
+
 
 
 
@@ -85,6 +89,8 @@ void Vectors(){
 
     // v={1,2,3,4,5} to delete {2,3}
     v.erase(v.begin()+1,v.begin()+4); // it does not includes the 4th  element from begin
+
+    v.pop_back(); // deletes the last element of the vector
 
     v.clear(); // erases the entire vector
 
