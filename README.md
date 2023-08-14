@@ -1,26 +1,25 @@
 # DSA
-I am Learning DSA  in C++ and will be using this repo to keep a track of my progress ☺️
+I am Learning DSA  in C++ and will be using this repo to keep track of my progress ☺️
 
 ## Topics to be Covered
-- [x] Arrays
-- [x] Strings
-- [x] Sorting
-- [x] Searching
-- [x] Recursion
-- [x] Backtracking
-- [x] Stack
-- [x] Queue
-- [x] Linked List
-- [x] Trees
-- [x] Graphs
-- [x] Greedy
-- [x] Dynamic Programming
-- [x] Bit Manipulation
-- [x] Hashing
-- [x] Tries
-- [x] Heaps
-- [x] STL
-- [x] STL Algorithms
+- &#9744;Arrays
+- &#9744; Strings
+- &#9744; Sorting
+- &#9744; Searching
+- &#9744; Recursion
+- &#9744; Backtracking
+- &#9744; Stack
+- &#9744; Queue
+- &#9744; Linked List
+- &#9744; Trees
+- &#9744; Graphs
+- &#9744; Greedy
+- &#9744; Dynamic Programming
+- &#9744;Bit Manipulation
+- &#9744; Hashing
+- &#9744; Tries
+- &#9744; Heaps
+- ✅ STL 
 
 ## Resources
 - [x] [GeeksforGeeks](https://www.geeksforgeeks.org/)
@@ -28,8 +27,7 @@ I am Learning DSA  in C++ and will be using this repo to keep a track of my prog
 - [x] [InterviewBit](https://www.interviewbit.com/)
 
 ## Languages
-- [x] C++
-- [x] Python
+- &#9745; C++
 
 
 ## License
