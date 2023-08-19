@@ -1,3 +1,5 @@
+// Given an array of integers arr, return true if the number of occurrences of each value in the array is unique or false otherwise
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -25,7 +27,7 @@ bool uniqueOccurrences(vector<int>& arr) {
             i+=cnt;
         }
         sort(res.begin(),res.end());
-        for(int i=0;i<res.size();i++){         // still having issues of what i dont know will fix later
+        for(int i=0;i<res.size();i++){         // still having issues,  what is it i dont know will fix later
             if(res[i]==res[i+1]){
                 return false;
             }
@@ -38,3 +40,5 @@ int main(){
     cout<<uniqueOccurrences(arr);
     return 0;
 }
+
+// 1 meanns true
