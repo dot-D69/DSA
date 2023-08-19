@@ -1,3 +1,6 @@
+//Find the unique number in the array where all the numbers are present twice except one number.
+//Time Complexity: O(n)
+
 #include <iostream>
 using namespace std;
 
