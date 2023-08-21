@@ -19,3 +19,6 @@ int main(){
     return 0;
 }
 
+
+//stack overflow error occurs when the base condition is not met and the function calls itself infinitely.until the stack memory is full which gives the error.
+
