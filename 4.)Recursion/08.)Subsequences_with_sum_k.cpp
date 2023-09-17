@@ -22,12 +22,12 @@ void subsequence(vector<int>&nums, int i,vector<int>&arr,vector<vector<int>>&res
 
 vector<vector<int>> subset(vector<int>&nums){
     vector<vector<int>> result;
-    subsequence(nums,0,arr,result,3);
+    subsequence(nums,0,arr,result,8);
     return result;
 }
 
 int main(){
-    vector<int> nums = {1,2,3};
+    vector<int> nums = {10,1,2,7,6,1,5};
         vector<vector<int>> result = subset(nums);
 
     // Printing the subsequences
