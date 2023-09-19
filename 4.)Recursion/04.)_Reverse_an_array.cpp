@@ -21,7 +21,7 @@ int main(){
 }
 
 // single pointer approach
-// The basic approach is we will be swappiing the first and last element so ther formula for that is n-i-1 i.e if the first element is at i=0 then we will swap it with the element at n-i-1 i.e n-0-1=n-1 which is the last element
+// The basic approach is we will be swappiing the first and last element so ther formula for that is (n-i-1)  i.e if the first element is at i=0 then we will swap it with the element at n-i-1 i.e n-0-1=n-1 which is the last element
 // we will stop when i>=n/2 because we will be swapping the first and last element so if we go beyond n/2 then we will be swapping the same elements again and again
 
 #include<bits/stdc++.h>
