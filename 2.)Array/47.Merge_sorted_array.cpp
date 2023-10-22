@@ -42,3 +42,46 @@ int main()
     }
     return 0;
 }
+
+// Another Optimal approach(that takes zero into consideration)
+#include <bits/stdc++.h>
+using namespace std;
+
+void mergeTwoSortedArraysWithoutExtraSpace(vector<long long> &a, vector<long long> &b)
+{
+    int n = a.size();
+    int m = b.size();
+    int left = n - 1;
+    int right = 0;
+    while (left >= 0 && right < m)
+    {
+        if (a[left] > b[right])
+        {
+            swap(a[left], b[right]);
+            left--, right++;
+        }
+        else
+        {
+            break;
+        }
+    }
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+}
+
+int main()
+{
+    vector<long long> a = {1, 3, 5, 7};
+    vector<long long> b = {0, 2, 6, 8, 9};
+    mergeTwoSortedArraysWithoutExtraSpace(a, b);
+    for (int i = 0; i < a.size(); i++)
+    {
+        cout << a[i] << " ";
+    }
+    cout << endl;
+    for (int i = 0; i < b.size(); i++)
+    {
+        cout << b[i] << " ";
+    }
+    return 0;
+}
