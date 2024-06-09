@@ -2,11 +2,11 @@
 I am Learning DSA  in C++ and will be using this repo to keep track of my progress ☺️
 
 ## Topics to be Covered
-- &#9744;Arrays
+- ✅;Arrays
 - &#9744; Strings
 - &#9744; Sorting
 - &#9744; Searching
-- &#9744; Recursion
+- ✅ Recursion
 - &#9744; Backtracking
 - &#9744; Stack
 - &#9744; Queue
